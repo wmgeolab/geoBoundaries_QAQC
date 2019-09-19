@@ -15,7 +15,9 @@ from oauth2client.file import Storage
 from datetime import date
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+from googleapiclient.errors import HttpError
 import pickle
+import time
 import shutil
 
 #########################################################################
@@ -131,7 +133,7 @@ def downloadFile(service, spaces, file_name, file_id, mimeType, dest_folder):
         if verbose:
             print("{} downloading file: {}, to folder {} \n".format(
                 spaces, file_name, dest_folder))
-        request = service.files().get_media(fileId=file_id)
+        request = service.files().get_media(fileId=file_id)#, acknowledgeAbuse=True)
         if "application/vnd.google-apps" in mimeType:
             if verbose:
                 print("Google apps media types will be exported accordingly")
@@ -156,16 +158,34 @@ def downloadFile(service, spaces, file_name, file_id, mimeType, dest_folder):
                 request = service.files().export_media(
                     fileId=file_id, mimeType='application/pdf')
                 file_name = file_name + ".pdf"
+        exception = 0
         if valid:
             #print("{}Downloading -- {}".format(spaces, file_name))
-            response = request.execute()
-            with open(os.path.join(dest_folder, file_name), "wb") as wer:
-                if verbose:
-                    print("Writing file {} to folder {}.\n".format(
-                        file_name, dest_folder))
-                wer.write(response)
-                global num_files
-                num_files += 1
+            try:
+              response = request.execute()
+            except HttpError as err:
+              print(request.__dict__)
+              if err.resp.status in [403,500,503]:
+                print("File download error, 403 500 or 503.")
+                time.sleep(5)
+                exception = 1
+              else:
+                reason = json.loads(err.content).get('error').get('errors')[0].get('reason')
+                print(reason)
+                exception = 1
+            
+            if(exception == 0):
+              with open(os.path.join(dest_folder, file_name), "wb") as wer:
+                  if verbose:
+                      print("Writing file {} to folder {}.\n".format(
+                          file_name, dest_folder))
+                  wer.write(response)
+                  global num_files
+                  num_files += 1
+            else:
+              print("An exception occurred while trying to download this file.")
+              print("The script will continue, but may result in incomplete checks.")
+              
 
 
 def getFolderId(service, folderName):

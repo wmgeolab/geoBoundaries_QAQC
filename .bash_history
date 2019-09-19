@@ -1,106 +1,3 @@
-ls
-cd ..
-ls
-cd ..
-ls
-cd bin
-ls
-cd python3
-cd ..
-ls
-cd usr
-cd local
-ls
-cd bin
-ls
-cd python3
-cd python3
-ls
-ls -l
-cd python3.6
-ls
-cd python
-ls -l
-cd opt
-cd ..
-ls
-cd ..
-ls
-cd opt
-cd cloudera/
-cd parcel
-cd parcels
-ls
-cd CDH-6.2.0-1.cdh6.2.0.p0.967373/
-ls
-cd lib
-cd spark
-cd conf
-ls
-nano spark-env.sh
-ls
-cd /opt/cloudera/parcels
-ls
-cd CDH-6.2.0-1.cdh6.2.0.p0.967373/
-ls
-cd bin
-ls
-ls | grep python
-cd ..
-ls
-cd ..
-ls
-cd CDSW
-ls
-cd bin
-ls
-cd ..
-ls
-cd .
-ls
-cd bin
-ls
-cd ..
-ls
-cd ..
-ls
-cd CDSW-1.5.0.p1.849870/
-ls
-cd bin
-ls
-cd host-controller 
-ls
-cd ..
-ls
-cd docker/
-ls
-cd ..
-ls
-cd docker/
-ls
-cd bin
-ls
-cd ..
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
-cd usr
-ls
-cd bin
-ls
-ls | grep python
-ls
-cd ..
-ls
-cd ..
-ls
 cd opt
 cd cloudera/
 cd parcel
@@ -385,3 +282,219 @@ hdfs dfs -cat /projects/geoboundaries/gbReleaseCandidate_0_0_0_2/RWA_ADM4.zip
 hdfs dfs -ls /projects/geoboundaries/gbReleaseCandidate_0_0_0_2
 hdfs dfs -ls /projects/geoboundaries/gbReleaseCandidate_0_0_0_2
 hdfs dfs -cat /projects/geoboundaries/gbReleaseCandidate_0_0_0_2/FRA_ADM1.zip
+git add -A .
+ls
+git status
+git init
+ls
+git add -A .
+git commit -m "Pushing back"
+git remote add origin https://github.com/wmgeolab/geoBoundaries_QAQC
+git remote -v
+git push origin master
+git push -f origin master
+ls
+rm .git
+rm -r .git
+rm -fr .git
+ls
+touch .gitignore
+nano .gitignore
+ls
+git init 
+ls
+git add .
+git status
+git commit -m "Push"
+git remote add origin https://github.com/wmgeolab/geoBoundaries_QAQC
+git remote -v
+git -f push origin master
+git push -f origin master
+ls
+cd gdal-2.4.0
+ls
+./configure
+make
+make
+ls
+ls
+cd ..
+rm -r gdal-2.4.0/
+ls
+ls
+cd /etc/security/keytabs
+ls
+cd ..
+ls
+cd ..
+ls
+cd etc/
+ls
+cd security
+ls
+klist
+kinit dsmillerrunfol@CAMPUS.WM.EDU@CAMPUS.WM.EDU
+kinit dsmillerrunfol@CAMPUS.WM.EDU
+ls
+klist
+kinit -R
+ls
+~/sparkImportDependencies/hdfs-2.5.8.tar.gz
+~/sparkImportDependencies/
+cd sparkImport
+cd sparkImportDependencies/
+ls
+'~/sparkImportDependencies/hdfs-2.5.8.tar.gz'
+'~/sparkImportDependencies/'
+'~/'
+ls
+cd ..
+ls
+tar '~/sparkImportDependencies/hdfs-2.5.8.tar.gz'
+tar '~/sparkImportDependencies/hdfs-2.5.
+tar xvzf '~/sparkImportDependencies/hdfs-2.5.8.tar.gz'
+ls
+cd sparkImportDependencies/
+ls
+pwd
+cd ~/sparkImportDependencies
+ls
+tar xvzf '~/sparkImportDependencies/hdfs-2.5.8.tar.gz'
+tar xvzf '~/sparkImportDependencies/hdfs-2.5.8.tar.gz'
+pwd
+cd ~/sparkImportDependencies/
+ls
+tar xvzf ~/sparkImportDependencies/hdfs-2.5.8.tar.gz
+ls
+cd ..
+ls
+cd sparkImport
+cd sparkImportDependencies/
+ls
+cd SparkI
+ls
+ls
+cd hdfs-2.5.8
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd sparkImportDependencies/
+ls
+cd hdfs-2.5.8
+ls
+cd ..
+ls
+cd hdfs-2.5.8
+ls
+python3 /home/cdsw/sparkImportDependencies/hdfs-2.5.8/setup.py bdist_egg
+python3 setup.py bdist_egg
+ls
+cd ..
+ls
+cd hdfs-2.5.8
+python3 setup.py bdist_egg
+ls
+rm dist
+rm -r dist
+ls
+python3 /home/cdsw/sparkImportDependencies/hdfs-2.5.8/setup.py bdist_egg
+cd ..
+python3 /home/cdsw/sparkImportDependencies/hdfs-2.5.8/setup.py bdist_egg
+cd hdfs-2.5.8
+ls
+python3 /home/cdsw/sparkImportDependencies/hdfs-2.5.8/setup.py bdist_egg
+ls
+cd ..
+ls
+cd hdfs-2.5.8
+ls
+cd dist
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+rm hdfs-2.5.8
+rm -r hdfs-2.5.8
+ls
+cd sparkImportDependencies/
+ls
+ls
+cd hdfs-2.5.8
+cd dist
+ls
+cd ..
+cd ..
+ls
+ls
+la
+ls
+ls
+nanon hdfs-2.5.8-py3.6.egg
+nano hdfs-2.5.8-py3.6.egg
+ls
+cd hdfs-2.5.8
+ls
+nano setup.py
+ls
+cd ..
+ls
+cd requests-kerberos
+cd requests-kerberos-0.12.0
+ls
+cd dist
+ls
+gcc
+ls
+cd sparkImportDependencies/
+ls
+rm winkerberos-0.7.0
+rm -r winkerberos-0.7.0
+rm winkerberos-0.7.0.zip 
+ls
+cd kerberos-1.3.0
+ls
+cd dist
+ls
+ls
+cd ..
+ls
+ls
+cd dist
+ls
+cd ..
+ls
+cd ..
+ls
+cd kerberos-1.3.0
+ls
+cd dist
+ls
+gcc
+hdfs df -ls /user/dsmillerrunfol@campus.wm.edu
+hdfs dfs -ls /user/dsmillerrunfol@campus.wm.edu
+hdfs dfs -get /user/dsmillerrunfol@campus.wm.edu/numpy-1.17.0-py3.6-linux-x86_64.egg /
+pwd
+hdfs dfs -get /user/dsmillerrunfol@campus.wm.edu/numpy-1.17.0-py3.6-linux-x86_64.egg /home/cdsw
+ls
+hdfs dfs -ls
+hdfs dfs -rm numpy-1.17.0-py3.6-linux-x86_64.egg
+hdfs dfs -ls
+hdfs dfs -rm test
+hdfs dfs -ls
+hdfs dfs -ls
+hdfs dfs -get numpy-1.17.0-py3.6-linux-x86_64.egg /
+hdfs dfs -get / numpy-1.17.0-py3.6-linux-x86_64.egg 
+fg
+hdfs dfs -get numpy-1.17.0-py3.6-linux-x86_64.egg ~
+python3
+cdsw logs
+git add -A .
+git commit -m "Operational V1"
+git push origin master

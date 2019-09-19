@@ -3,6 +3,7 @@ from os import listdir
 from os.path import isfile, join
 from pathlib import Path
 import requests
+import os
 
 
 def metadata_check(boundary_set_name, metaQALogPath, version_number):

@@ -1,1 +1,16 @@
-/temp/
+/temp/**
+/tempSparks/**
+/sparkImportDependencies/**
+/__pycache__/**
+danr.keytab
+token.pickle
+/.conda/**
+/.local/**
+/.cache/**
+/.ipython/**
+.cache/**
+.ipython/**
+.cache/*
+__pycache__/*
+.wget-hsts
+.oracle_jre_usage/*
